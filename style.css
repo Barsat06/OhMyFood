@@ -13,10 +13,19 @@ html, body{
     padding: 0px;
 }
 
-h1, h2, h3, p{
+h1, h2, h3, p, ul{
     margin: 0px;
     padding: 0px;
     font-size: 1rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 img{
@@ -47,4 +56,37 @@ header{
 
 #logo img{
     width: 150px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #3a3a3a;
+}
+
+footer h2, footer a{
+    color: white;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+footer h2{
+    font-family: 'shrikhand';
+    font-weight: 200;
+    font-size: 16px;
+    padding: 15px 0px;
+}
+
+footer i{
+    margin-right: 15px;
+    font-size: 12px;
+    width: 10px;
+}
+
+footer ul{
+    padding-bottom: 30px;
+}
+
+footer li{
+    margin-bottom: 2px;
 }
