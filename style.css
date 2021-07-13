@@ -23,3 +23,28 @@ img{
     display: block;
     object-fit: cover;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    min-width: 375px;
+    margin: auto;
+}
+
+/*Header*/
+
+header{
+    height: 65px;
+    box-shadow: 0px 0px 10px 0px #a2a2a3;
+}
+
+#logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+#logo img{
+    width: 150px;
+}
