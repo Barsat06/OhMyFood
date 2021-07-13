@@ -1,0 +1,25 @@
+:root{
+    --clr-primary: #9356DC;
+    --clr-secondary: #FF79DA;
+    --clr-tertiary: #99E2D0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+}
