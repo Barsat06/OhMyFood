@@ -2,6 +2,7 @@
     --clr-primary: #9356DC;
     --clr-secondary: #FF79DA;
     --clr-tertiary: #99E2D0;
+    --ph-grey: #4b4b4b;
 }
 
 *{
@@ -42,8 +43,11 @@ body{
 /*Header*/
 
 header{
+    position: fixed;
+    top: 0px;
+    background-color: white;
     height: 65px;
-    box-shadow: 0px 0px 10px 0px #a2a2a3;
+    width: 100%;
 }
 
 #logo{
@@ -55,7 +59,73 @@ header{
 }
 
 #logo img{
-    width: 150px;
+    width: 175px;
+}
+
+/*Search*/
+
+#search{
+    box-shadow: 0px 65px 5px 0px #89898a inset;
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0px 10px 0px;
+    height: 115px;
+    display: flex;
+    align-items: center;
+}
+
+#search_area{
+    background-color: transparent;
+    border: none;
+    margin-left: 7px;
+    height: 25px;
+}
+
+::placeholder, #location_logo{
+    color: var(--ph-grey);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*Présentation*/
+
+#presentation{
+    background-color: #ebebeb;
+}
+
+#presentation h1, #presentation p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#presentation h1{
+    padding: 40px 0px 15px 0px;
+    font-size: 28px;
+}
+
+#presentation p{
+    padding: 0px 0px 30px 0px;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+#btn_restaurant{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+
+#presentation a{
+    background: linear-gradient(to top left, var(--clr-primary),var(--clr-secondary));
+    padding: 15px 20px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #afafaf;
 }
 
 /*Footer*/
