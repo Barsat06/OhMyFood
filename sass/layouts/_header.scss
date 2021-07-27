@@ -1,0 +1,19 @@
+header{
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    background-color: white;
+    height: 65px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px #89898a;
+}
+
+#logo{
+    @include flex-center($align: flex-end);
+    height: 100%;
+    padding-bottom: 15px;
+    
+    img{
+        width: 175px;
+    }
+}

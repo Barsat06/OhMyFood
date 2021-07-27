@@ -1,0 +1,228 @@
+//Search
+
+#search{
+    @include flex-center;
+    background-color: #eaeaea;
+    padding: 78px 0px 13px 0px;
+    height: 116px;
+    
+    &__area{
+        background-color: transparent;
+        border: none;
+        margin-left: 7px;
+        height: 25px;
+        width: 160px;
+        color: $ph-grey;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+    
+::placeholder, #location__logo{
+    color: $ph-grey;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+//Présentation
+
+#presentation{
+    background-color: $light-grey;
+    
+    h2, p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h2{
+        padding: 35px 0px 15px 0px;
+        font-size: 24px;
+        line-height: 25px;
+    }
+    
+    p{
+        padding: 0px 0px 30px 0px;
+        color: #7c7c7c;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    a{
+        background: linear-gradient( to top left, $clr-primary, $clr-secondary);
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px #bbbbbb;
+        
+        &:hover{
+            background: linear-gradient(to top left, #995ce4, #ff82dc);
+            box-shadow: 5px 5px 10px #a3a3a3;
+        }
+    }
+}
+
+//Fonctionnement
+
+.function{
+    display: flex;
+    flex-direction: column;
+    
+    h2{
+        font-size: 23px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    
+    &__block{
+        display: flex;
+        margin: 30px 0px 50px 0px;
+        gap: 30px;
+        flex-direction: column;
+
+        &__step{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            gap: 25px;
+            min-width: 312px;
+            margin: 0px 20px 0px 33px;
+            border-radius: 22px;
+            box-shadow: 5px 5px 20px #d1d1d1;
+            background-color: $light-grey;
+            
+            p{
+                @include flex-center;
+                width: 26px;
+                height: 26px;
+                margin-left: -13px;
+                border-radius: 100%;
+                border: none;
+                background-color: $clr-primary;
+                color: white;
+            }
+        
+            i{
+                font-size: 20px;
+                width: 15px;
+                color: #7e7e7e;
+            }
+            
+            h3{
+                padding: 25px 0px;
+                font-size: 18px;
+            }
+        
+            &:hover{
+                background-color: #f5edff;
+        
+                i{
+                    color: $clr-primary;
+                }
+            }    
+        }
+    }
+}
+
+//Restaurants
+
+.restaurant{
+    background-color: $light-grey;
+    padding: 50px 20px;
+    
+    h2{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+        a{
+            border-radius: 15px;
+            display: flex;
+            flex: 1;
+        }
+    }
+    
+    &__div{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-color: white;
+        box-shadow: 0 0 5px #b3b3b3;
+        height: 250px;
+        min-width: 335px;
+        border-radius: 15px;
+        position: relative;
+        
+        img{
+            width: 100%;
+            height: 175px;
+            border-radius: 15px 15px 0px 0px;
+        }
+        
+        &--new{
+            position: absolute;
+            top: 15px;
+            right: 12px;
+            padding: 8px 13px;
+            border-radius: 4px;
+            background-color: $clr-tertiary;
+            color: #1d997b;
+        }
+    }
+    
+    &__bande{
+        @include flex-center($justify: space-between);
+        height: 100%;
+    }
+    
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+        
+        h3{
+            font-size: 18px;
+        }
+        
+        p{
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    
+    &__btn{
+        @include flex-center;
+        padding-bottom: 60px;
+    }
+}
+
+.fas.fa-heart{
+    position: absolute;
+    right: 25px;
+    font-size: 25px;
+    background: -webkit-linear-gradient( 270deg, $clr-primary, $clr-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.far.fa-heart{
+    position: absolute;
+    right: 25px;
+    font-size: 25px;
+    background: white;
+    z-index: 2;
+    
+    &:hover{
+        background-color: transparent;
+        color: transparent;
+    }
+}
