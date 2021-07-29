@@ -1,5 +1,9 @@
-@mixin flex-center($flex: flex, $align: center, $justify: center){
+@mixin flex-center ($flex: flex, $align: center, $justify: center){
     display: $flex;
     align-items: $align;
     justify-content: $justify;
+}
+
+@mixin transform ($time: 0.25s){
+    transition: all $time;
 }

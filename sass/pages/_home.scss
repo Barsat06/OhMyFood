@@ -15,6 +15,11 @@
         color: $ph-grey;
         font-weight: 700;
         font-size: 16px;
+        outline: none;
+
+        &:focus{
+            border-bottom: 2px solid black;
+        }
     }
 }
     
@@ -26,7 +31,7 @@
 
 //Présentation
 
-#presentation{
+.presentation{
     background-color: $light-grey;
     
     h2, p{
@@ -57,11 +62,19 @@
         font-size: 16px;
         cursor: pointer;
         box-shadow: 5px 5px 5px #bbbbbb;
+        @include transform;
         
         &:hover{
+            transform: scale(1.05);
             background: linear-gradient(to top left, #995ce4, #ff82dc);
             box-shadow: 5px 5px 10px #a3a3a3;
         }
+        
+    }
+    
+    &__btn{
+        @include flex-center;
+        padding-bottom: 60px;
     }
 }
 
@@ -70,6 +83,8 @@
 .function{
     display: flex;
     flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
     
     h2{
         font-size: 23px;
@@ -147,6 +162,11 @@
             border-radius: 15px;
             display: flex;
             flex: 1;
+            @include transform;
+
+            &:hover{
+                transform: scale(1.02);
+            }
         }
     }
     
@@ -197,11 +217,6 @@
             font-size: 16px;
             font-weight: 300;
         }
-    }
-    
-    &__btn{
-        @include flex-center;
-        padding-bottom: 60px;
     }
 }
 
