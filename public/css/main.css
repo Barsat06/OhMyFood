@@ -107,7 +107,19 @@ header {
           box-shadow: 0px 0px 5px 0px #89898a;
 }
 
-#logo {
+header .arrow {
+  position: absolute;
+  font-size: 25px;
+  height: 25px;
+  top: 20px;
+  left: 20px;
+}
+
+header .arrow i {
+  color: #4b4b4b;
+}
+
+header #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +133,7 @@ header {
   padding-bottom: 15px;
 }
 
-#logo img {
+header #logo img {
   width: 175px;
 }
 
