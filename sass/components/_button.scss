@@ -1,0 +1,23 @@
+.button{
+    @include flex-center;
+    padding-bottom: 60px;
+
+    a{
+        background: linear-gradient( to top left, $clr-primary, $clr-secondary);
+        padding: 15px 20px;
+        border-radius: 40px;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px #bbbbbb;
+        @include transition;
+        
+        &:hover{
+            transform: scale(1.05);
+            background: linear-gradient(to top left, #995ce4, #ff82dc);
+            box-shadow: 5px 5px 10px #a3a3a3;
+        }
+        
+    }
+}

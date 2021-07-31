@@ -35,6 +35,67 @@ body {
   margin: auto;
 }
 
+.fas.fa-heart {
+  position: absolute;
+  right: 25px;
+  font-size: 25px;
+  background: -webkit-linear-gradient(270deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.far.fa-heart {
+  position: absolute;
+  right: 25px;
+  font-size: 25px;
+  background: white;
+  z-index: 2;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.far.fa-heart:hover {
+  background-color: transparent;
+  color: transparent;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
+}
+
+.button a {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  padding: 15px 20px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px #bbbbbb;
+          box-shadow: 5px 5px 5px #bbbbbb;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.button a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background: -webkit-gradient(linear, right bottom, left top, from(#995ce4), to(#ff82dc));
+  background: linear-gradient(to top left, #995ce4, #ff82dc);
+  -webkit-box-shadow: 5px 5px 10px #a3a3a3;
+          box-shadow: 5px 5px 10px #a3a3a3;
+}
+
 header {
   position: fixed;
   z-index: 5;
@@ -69,13 +130,12 @@ footer {
 }
 
 footer h2, footer a {
-  color: white;
   margin-left: 30px;
-  font-size: 14px;
 }
 
 footer h2 {
   font-family: 'shrikhand';
+  color: white;
   font-weight: 200;
   font-size: 18px;
   padding: 15px 0px;
@@ -87,12 +147,17 @@ footer i {
   width: 15px;
 }
 
+footer a {
+  color: #d6d6d6;
+  font-size: 16px;
+}
+
 footer ul {
   padding-bottom: 30px;
 }
 
 footer li {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 #search {
@@ -120,6 +185,7 @@ footer li {
   font-weight: 700;
   font-size: 16px;
   outline: none;
+  border-bottom: 2px solid transparent;
 }
 
 #search__area:focus {
@@ -175,43 +241,6 @@ footer li {
   color: #7c7c7c;
   font-size: 18px;
   font-weight: 400;
-}
-
-.presentation a {
-  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
-  padding: 15px 20px;
-  border-radius: 40px;
-  color: white;
-  font-weight: 500;
-  font-size: 16px;
-  cursor: pointer;
-  -webkit-box-shadow: 5px 5px 5px #bbbbbb;
-          box-shadow: 5px 5px 5px #bbbbbb;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.presentation a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  background: -webkit-gradient(linear, right bottom, left top, from(#995ce4), to(#ff82dc));
-  background: linear-gradient(to top left, #995ce4, #ff82dc);
-  -webkit-box-shadow: 5px 5px 10px #a3a3a3;
-          box-shadow: 5px 5px 10px #a3a3a3;
-}
-
-.presentation__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 60px;
 }
 
 .function {
@@ -407,27 +436,5 @@ footer li {
 .restaurant__text p {
   font-size: 16px;
   font-weight: 300;
-}
-
-.fas.fa-heart {
-  position: absolute;
-  right: 25px;
-  font-size: 25px;
-  background: -webkit-linear-gradient(270deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.far.fa-heart {
-  position: absolute;
-  right: 25px;
-  font-size: 25px;
-  background: white;
-  z-index: 2;
-}
-
-.far.fa-heart:hover {
-  background-color: transparent;
-  color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

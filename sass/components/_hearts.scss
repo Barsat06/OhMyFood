@@ -1,0 +1,22 @@
+.fas.fa-heart{
+    position: absolute;
+    right: 25px;
+    font-size: 25px;
+    background: -webkit-linear-gradient( 270deg, $clr-primary, $clr-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.far.fa-heart{
+    position: absolute;
+    right: 25px;
+    font-size: 25px;
+    background: white;
+    z-index: 2;
+    @include transition;
+    
+    &:hover{
+        background-color: transparent;
+        color: transparent;
+    }
+}
