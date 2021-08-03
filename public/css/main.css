@@ -8,7 +8,7 @@ html, body {
   padding: 0px;
 }
 
-h1, h2, h3, p, ul {
+h1, h2, h3, h4, p, ul {
   margin: 0px;
   padding: 0px;
   font-size: 1rem;
@@ -463,8 +463,12 @@ footer li {
   font-weight: 300;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 .presRestaurant img {
-  height: 400px;
+  height: 350px;
   width: 100%;
 }
 
@@ -490,5 +494,72 @@ footer li {
   font-size: 28px;
   font-weight: 400;
   padding-left: 30px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 15px;
+}
+
+.menu__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__block h3 {
+  border-bottom: 3px solid #99E2D0;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 40px;
+  padding-bottom: 3px;
+}
+
+.plate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  height: 70px;
+  -webkit-box-shadow: 0 0 7px #d6d6d6;
+          box-shadow: 0 0 7px #d6d6d6;
+  padding: 0 20px 0 10px;
+}
+
+.plate__description h4 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.plate__description p {
+  font-size: 15px;
+  font-weight: 300;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.plate__price {
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 25px;
 }
 /*# sourceMappingURL=main.css.map */
