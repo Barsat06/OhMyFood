@@ -38,20 +38,33 @@ body {
 .fas.fa-heart {
   position: absolute;
   right: 25px;
+  bottom: 25px;
   font-size: 25px;
   background: -webkit-linear-gradient(270deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.fas.fa-heart.pageRes {
+  bottom: 36px;
+  right: 30px;
+}
+
 .far.fa-heart {
   position: absolute;
   right: 25px;
+  bottom: 25px;
   font-size: 25px;
   background: white;
   z-index: 2;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
+}
+
+.far.fa-heart.pageRes {
+  background-color: #f6f6f6;
+  bottom: 36px;
+  right: 30px;
 }
 
 .far.fa-heart:hover {
@@ -146,7 +159,7 @@ footer h2, footer a {
 }
 
 footer h2 {
-  font-family: 'shrikhand';
+  font-family: 'shrikhand', sans-serif;
   color: white;
   font-weight: 200;
   font-size: 18px;
@@ -448,5 +461,34 @@ footer li {
 .restaurant__text p {
   font-size: 16px;
   font-weight: 300;
+}
+
+.presRestaurant img {
+  height: 400px;
+  width: 100%;
+}
+
+.presRestaurant__bande {
+  background-color: #f6f6f6;
+  position: relative;
+  height: 100px;
+  border-radius: 40px 40px 0 0;
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.presRestaurant__bande h2 {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding-left: 30px;
 }
 /*# sourceMappingURL=main.css.map */
