@@ -82,7 +82,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+
+.button.pageRes {
+  margin-top: 50px;
+}
+
+.button.pageRes a {
+  padding: 15px 50px;
 }
 
 .button a {

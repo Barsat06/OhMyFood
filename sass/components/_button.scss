@@ -1,6 +1,14 @@
 .button{
     @include flex-center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+
+    &.pageRes{
+        margin-top: 50px;
+
+        a{
+            padding: 15px 50px;
+        }
+    }
 
     a{
         background: linear-gradient( to top left, $clr-primary, $clr-secondary);
