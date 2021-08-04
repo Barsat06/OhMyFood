@@ -178,13 +178,15 @@
     &__bande{
         @include flex-center($justify: space-between);
         height: 100%;
+        padding: 0 15px;
+        border-radius: 15px;
+        background-color: inherit;
     }
     
     &__text{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 15px;
         
         h3{
             font-size: 18px;

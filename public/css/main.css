@@ -35,36 +35,24 @@ body {
   margin: auto;
 }
 
+.heart {
+  position: relative;
+  background-color: inherit;
+}
+
 .fas.fa-heart {
-  position: absolute;
-  right: 25px;
-  bottom: 25px;
   font-size: 25px;
   background: -webkit-linear-gradient(270deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.fas.fa-heart.pageRes {
-  bottom: 36px;
-  right: 30px;
-}
-
 .far.fa-heart {
   position: absolute;
-  right: 25px;
-  bottom: 25px;
   font-size: 25px;
-  background: white;
-  z-index: 2;
+  background: inherit;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
-}
-
-.far.fa-heart.pageRes {
-  background-color: #f6f6f6;
-  bottom: 36px;
-  right: 30px;
 }
 
 .far.fa-heart:hover {
@@ -83,14 +71,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 60px;
-}
-
-.button.pageRes {
-  margin-top: 50px;
-}
-
-.button.pageRes a {
-  padding: 15px 50px;
 }
 
 .button a {
@@ -446,6 +426,9 @@ footer li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  padding: 0 15px;
+  border-radius: 15px;
+  background-color: inherit;
 }
 
 .restaurant__text {
@@ -459,7 +442,6 @@ footer li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 15px;
 }
 
 .restaurant__text h3 {
@@ -495,13 +477,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 30px;
 }
 
 .presRestaurant__bande h2 {
   font-family: 'Shrikhand', sans-serif;
   font-size: 28px;
   font-weight: 400;
-  padding-left: 30px;
 }
 
 .menu {
@@ -569,5 +551,13 @@ body {
   font-weight: 500;
   font-size: 15px;
   margin-top: 25px;
+}
+
+.button.pageRes {
+  margin-top: 50px;
+}
+
+.button.pageRes a {
+  padding: 15px 50px;
 }
 /*# sourceMappingURL=main.css.map */

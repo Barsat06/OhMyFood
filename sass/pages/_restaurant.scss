@@ -18,12 +18,12 @@ body{
         border-radius: 40px 40px 0 0;
         margin-top: -50px;
         @include flex-center($justify: space-between);
+        padding: 0 30px;
         
         h2{
             font-family: 'Shrikhand', sans-serif;
             font-size: 28px;
             font-weight: 400;
-            padding-left: 30px;
         }
     }
 }
@@ -78,5 +78,18 @@ body{
         font-weight: 500;
         font-size: 15px;
         margin-top: 25px;
+    }
+}
+
+//Bouton Commander
+
+.button{
+    
+    &.pageRes{
+        margin-top: 50px;
+    
+        a{
+            padding: 15px 50px;
+        }
     }
 }

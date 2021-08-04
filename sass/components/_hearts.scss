@@ -1,32 +1,20 @@
+.heart{
+    position: relative;
+    background-color: inherit;
+}
+
 .fas.fa-heart{
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
     font-size: 25px;
     background: -webkit-linear-gradient( 270deg, $clr-primary, $clr-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    &.pageRes{
-        bottom: 36px;
-        right: 30px;
-    }
 }
 
 .far.fa-heart{
     position: absolute;
-    right: 25px;
-    bottom: 25px;
     font-size: 25px;
-    background: white;
-    z-index: 2;
+    background: inherit;
     @include transition;
-
-    &.pageRes{
-        background-color: $light-grey;
-        bottom: 36px;
-        right: 30px;
-    }
     
     &:hover{
         background-color: transparent;

@@ -2,14 +2,6 @@
     @include flex-center;
     margin-bottom: 60px;
 
-    &.pageRes{
-        margin-top: 50px;
-
-        a{
-            padding: 15px 50px;
-        }
-    }
-
     a{
         background: linear-gradient( to top left, $clr-primary, $clr-secondary);
         padding: 15px 20px;
