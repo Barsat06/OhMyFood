@@ -70,7 +70,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .button a {
@@ -266,6 +266,7 @@ footer li {
           flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .function h2 {
@@ -351,6 +352,8 @@ footer li {
 .restaurant h2 {
   font-size: 23px;
   margin-bottom: 30px;
+  padding-top: 80px;
+  margin-top: -80px;
 }
 
 .restaurant__block {
@@ -453,7 +456,7 @@ footer li {
   font-weight: 300;
 }
 
-body {
+.body__restaurant {
   background-color: #f6f6f6;
 }
 
@@ -518,6 +521,7 @@ body {
 }
 
 .plate {
+  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,6 +537,47 @@ body {
   -webkit-box-shadow: 0 0 7px #d6d6d6;
           box-shadow: 0 0 7px #d6d6d6;
   padding: 0 20px 0 10px;
+  -webkit-animation: plate_anim 2s cubic-bezier(0.21, 0.3, 0.41, 1.03) forwards;
+          animation: plate_anim 2s cubic-bezier(0.21, 0.3, 0.41, 1.03) forwards;
+}
+
+.plate--0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.plate--1 {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+
+.plate--2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes plate_anim {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes plate_anim {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .plate__description h4 {
