@@ -122,7 +122,7 @@ body {
   }
   100% {
     opacity: 0;
-    left: -1000px;
+    left: -10000px;
   }
 }
 
@@ -138,7 +138,7 @@ body {
   }
   100% {
     opacity: 0;
-    left: -1000px;
+    left: -10000px;
   }
 }
 
@@ -737,13 +737,19 @@ footer li {
 .plate__description h4 {
   font-size: 18px;
   margin-bottom: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 280px;
 }
 
 .plate__description p {
   font-size: 15px;
   font-weight: 300;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 280px;
 }
 
 .plate__price {
