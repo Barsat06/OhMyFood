@@ -1,0 +1,93 @@
+.loader{
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba($color: #ffffff, $alpha: .7);
+    animation: disparition 3s forwards;
+    
+    @keyframes disparition {
+        0%{
+            opacity: 1;
+        }
+        80%{
+            opacity: 1;
+        }
+        99%{
+            left: 0px;
+        }
+        100%{
+            opacity: 0;
+            left: -1000px;
+            
+        }
+    }
+    
+    &__screen{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+        
+
+        &__points{
+            display: flex;
+            gap: 15px;
+
+            .point{
+                
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                animation: haut-bas 3s infinite;
+
+                @keyframes haut-bas {
+
+                    0%{
+                        transform: translateY(0px) scale(1);
+                    }
+                    25%{
+                        transform: translateY(-30px) scale(.75);
+                    }
+                    50%{
+                        transform: translateY(0px) scale(1);
+                    }
+                    75%{
+                        transform: translateY(-30px) scale(.75);
+                    }
+                }
+
+                @for $i from 0 to 3 {
+                    &--#{$i}{
+                        animation-delay: #{$i*0.2}s;
+                    }
+                }
+
+                &--0{
+                    background-color: $clr-primary;
+                }
+                &--1{
+                    background-color: $clr-secondary;
+                }
+                &--2{
+                    background-color: $clr-tertiary;
+                }
+            }
+        }
+        
+        &__text{
+            display: flex;
+            justify-content: center;
+
+            h2{
+                padding: 10px;
+                font-size: 35px;
+                font-family: 'shrikhand', sans-serif;
+                background: -webkit-linear-gradient( 0deg, $clr-primary, $clr-secondary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
