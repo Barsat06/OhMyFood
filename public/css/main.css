@@ -701,6 +701,11 @@ footer li {
           animation-delay: 0.3s;
 }
 
+.plate--3 {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
 @-webkit-keyframes plate_anim {
   from {
     -webkit-transform: translateY(50px);
