@@ -61,8 +61,10 @@
     border-radius: 15px;
     height: 70px;
     box-shadow: 0 0 7px #d6d6d6;
-    padding: 0 20px 0 10px;
+    padding: 0 0 0 10px;
     animation: plate_anim 2s cubic-bezier(.21,.3,.41,1.03) forwards;
+    max-width: 100%;
+    overflow: hidden;
 
     @for $i from 0 to 3 {
         &--#{$i}{
@@ -81,32 +83,62 @@
     }
 
     &__description{
+        flex: 1;
+        overflow: hidden;
+
+        h4, p{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
 
         h4{
             font-size: 18px;
             margin-bottom: 4px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 280px;
         }
 
         p{
             font-size: 15px;
             font-weight: 300;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 280px;
         }
     }
 
     &__price{
-        font-weight: 500;
+        font-weight: 700;
         font-size: 15px;
         margin-top: 25px;
+        padding-left: 11px;
+        padding-right: 20px;
+    }
+
+    .check{
+        width: 70px;
+        height: 100%;
+        background-color: $clr-tertiary;
+        @include flex-center;
+        color: white;
+        font-size: 22px;
+        transition: all .6s;
+        rotate: 180deg;
+        margin-right: -70px;
+
+        i{
+            transform: rotate(-360deg);
+            transition: all .5s;
+        }
+    }
+
+    &:hover > .check{
+
+        margin-right: 0;
+        rotate: 0;
+
+        & > i{
+            transform: rotate(0deg);
+        }
     }
 }
+
 
 //Bouton Commander
 

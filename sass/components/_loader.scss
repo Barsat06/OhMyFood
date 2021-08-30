@@ -4,22 +4,15 @@
     height: 100%;
     width: 100%;
     z-index: 10;
+    opacity: 1;
     background-color: rgba($color: #ffffff, $alpha: .7);
-    animation: disparition 3s forwards;
+    animation: disparition 0.5s 2s forwards;
     
     @keyframes disparition {
-        0%{
-            opacity: 1;
-        }
-        80%{
-            opacity: 1;
-        }
-        99%{
-            left: 0px;
-        }
-        100%{
+        to{
             opacity: 0;
-            left: -10000px;
+            display: none;
+            z-index: -1;
         }
     }
     
