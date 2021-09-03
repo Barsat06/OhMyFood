@@ -123,7 +123,6 @@
         color: white;
         font-size: 22px;
         @include transition($time: 0.6s);
-        rotate: 180deg;
         margin-right: -70px;
 
         i{
@@ -135,7 +134,6 @@
     &:hover > .check{
 
         margin-right: 0;
-        rotate: 0;
 
         & > i{
             transform: rotate(0deg);

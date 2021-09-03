@@ -778,7 +778,6 @@ footer li {
   font-size: 22px;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
-  rotate: 180deg;
   margin-right: -70px;
 }
 
@@ -791,7 +790,6 @@ footer li {
 
 .plate:hover > .check {
   margin-right: 0;
-  rotate: 0;
 }
 
 .plate:hover > .check > i {
